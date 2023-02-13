@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    .main
+    {
+        width: 90%;
+        height: 70%;
+        /* border: 2px solid red; */
+        display: flex;
+
+    }
+    .parent{
+        width: 33% ;
+        height: 100% ;
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .parent1{
+        background-color: #e38826;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .parent2{
+        background-color: #006970;
+       
+    }
+    .parent3{
+        background-color: #004241;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .child{
+        width:100%;
+        height: 20%;
+        /* border: black solid; */
+        padding: 2rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+    }
+    BUTTON{
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+
+
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="parent parent1">
+            <div class="child child1">
+                <img src="https://cdn-icons-png.flaticon.com/128/2736/2736918.png" alt="">
+            </div>
+            <div class="child child2">SEDAN</div>
+            <div class="child child3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis officiis incidunt veritatis exercitationem dolor quasi dolore nobis?</div>
+            <div class="child child4"><BUTTON>LEARN MORE</BUTTON></div>
+
+        </div>
+        <div class="parent parent2">
+            <div class="child child1"><img src="https://cdn-icons-png.flaticon.com/128/2736/2736918.png" alt=""></div>
+            <div class="child child2">SEDAN</div>
+            <div class="child child3">Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolorum necessitatibus ratione corrupti minima velit omnis autem.</div>
+            <div class="child child4"><BUTTON>LEARN MORE</BUTTON></div>
+            </div>
+
+        <div class="parent parent3">
+            <div class="child child1"><img src="https://cdn-icons-png.flaticon.com/128/2736/2736918.png" alt=""></div>
+            <div class="child child2">SEDAN</div>
+            <div class="child child3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi saepe temporibus tempora iure ipsam </div>
+            <div class="child child4"><BUTTON>LEARN MORE</BUTTON></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
