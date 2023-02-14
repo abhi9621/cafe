@@ -8,10 +8,14 @@
     <title>Document</title>
 </head>
 <style>
+    body{
+        margin: 0;
+        /* padding: 0; */
+    }
     .main {
         width: 100%;
         height: 100vh;
-        border: 4px black solid;
+        /* border: 4px black solid; */
         justify-content: center;
         align-items: center;
 
@@ -23,14 +27,14 @@
         width: 100%;
         padding: 1%;
         display: flex;
-        border: 2px green solid;
+        /* border: 2px green solid; */
     }
    
 
     .brand {
         width: 50%;
         height: 100%;
-        border: 2px red solid;
+        /* border: 2px red solid; */
     }
 
     .brand img {
@@ -41,20 +45,40 @@
     .features {
         width: 50%;
         height: 100%;
-        border: 2px pink solid;
+        /* border: 2px pink solid; */
         display: flex;
-        justify-content: space-around;
+        /* justify-content: space-around; */
     }
-    .features img{
+    .featuresdiv{
+        width: 15%;
+        height: 100%;
+        /* border:1px  black solid; */
+        color: grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .featuresdiv img{  
 
         
-        height: 30%;
-        width: 50%;
+        height: 50%;
+        width: 30%;
+        
+    } 
+   .featurep{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: larger;
+        border-left: 2px grey solid;
+        padding: 0px 1%;
     }
 
     main {
         display: flex;
         justify-content: space-between;
+        height: 90vh;
     }
     section{
         display: flex;
@@ -62,18 +86,25 @@
         justify-content: space-between;
     }
     section img{
-        border: 4px blue solid;
-        height: 150%;
-        width: 50%;
-        align-items: end;
+        /* border: 4px blue solid; */
+         height: 100%; 
+        width: 100%;
     }
-    .features button{
-        box-sizing: border-box;
-        border-radius:50px ;
-        background-color: #2977c9;
-        color: white;
+    .featurebutton{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+     .featurebutton>button{
+        /* box-sizing: border-box; */
+        border-radius: 20px; ;
+        border: 2px #2977c9 solid;
+        background-color: white;
+        color: #2977c9;
         font-size: larger;
-    }
+       
+    } 
     section button{
         box-sizing: border-box;
         border-radius: 50px;
@@ -92,6 +123,9 @@
          /* border: 5px green solid; */
          /* padding: 2rem; */
 
+    }
+    section{
+        width: 50%;
     }
     p input{
         align-items: center;
@@ -112,16 +146,32 @@
 
             </div>
             <div class="features">
-                
+                <div class="featuresdiv">
                     <img src="https://cdn-icons-png.flaticon.com/128/3405/3405524.png" alt="">
                     <p>discover</p>
+                </div>
+                
+                <div class="featuresdiv">
                     <img src="https://cdn-icons-png.flaticon.com/128/2118/2118701.png" alt="">
                     <p>people</p>
+                </div>
+                <div class="featuresdiv">
                     <img src="https://cdn-icons-png.flaticon.com/128/3018/3018864.png" alt="">
                     <p>Learning</p>
+                </div> 
+                 <div class="featuresdiv">
                     <img src="https://cdn-icons-png.flaticon.com/128/1063/1063299.png" alt="">
                     <p>Jobs</p>
+                 </div>
+                 <div class="featurep">
+                    <p>Join now</p>
+                 </div>
+                
+               
+                  
+                   <div class="featurebutton">
                   <button>sign in</button>
+                </div>
             </div>
         </nav>
         <main>
@@ -137,6 +187,7 @@
                 </form>
                 <button>Agree & Join</button>
             </section>
+
             <section>
             <img src="amficasestudy1200.jpg" alt=""></section>
 
